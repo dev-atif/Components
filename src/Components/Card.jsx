@@ -76,7 +76,7 @@ const Card = () => {
             </div>
             <div className="mt-16 ">
               {Strategy.map((item, index) => (
-                <p className="odd:border-t  even:border-t border-slate-300 last:border-b py-2 text-sm">
+                <p key={index} className="odd:border-t  even:border-t border-slate-300 last:border-b py-2 text-sm">
                   {item.title}
                 </p>
               ))}

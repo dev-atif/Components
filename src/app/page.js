@@ -47,14 +47,14 @@ export default function Home() {
       </div>
       <div className="p-5">
         {AccordianData.map((item,index)=>(
-          <div>
+          <div key={index}>
             <Accordian title={item.title} description={item.desc} />
             </div>
         ))}
       </div>
       <div className="px-4 pt-10">
         {HoverData.map((item,index)=>(
-          <div>
+          <div key={index}>
             <HoverImage id={item.id} tittle={item.title} image={item.image}/>
             </div>
         ))}

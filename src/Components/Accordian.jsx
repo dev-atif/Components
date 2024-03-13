@@ -39,10 +39,10 @@ const Accordion = ({ title, description }) => {
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="h-6 w-6"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          
           onAnimationEnd={() => setAnimationDone(true)}
           onClick={toggleAccordion}
         >
