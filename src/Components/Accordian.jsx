@@ -42,7 +42,6 @@ const Accordion = ({ title, description }) => {
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
-          
           onAnimationEnd={() => setAnimationDone(true)}
           onClick={toggleAccordion}
         >
