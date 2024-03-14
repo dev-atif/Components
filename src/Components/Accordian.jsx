@@ -27,6 +27,7 @@ const Accordion = ({ title, description }) => {
             isOpen ? "px-4  text-black" : "text-white px-0 "
           } transition-all transform duration-500  text-sm`}
         >
+          {/* --------Tittle------------------ */}
           {title}
         </div>
         <svg
@@ -42,7 +43,7 @@ const Accordion = ({ title, description }) => {
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
-          onAnimationEnd={() => setAnimationDone(true)}
+
           onClick={toggleAccordion}
         >
           <line

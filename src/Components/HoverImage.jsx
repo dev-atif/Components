@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 const HoverImage = ({id,tittle,image}) => {
   return (
     <div className="relative border-b border-gray-500 py-2">
@@ -15,7 +16,7 @@ const HoverImage = ({id,tittle,image}) => {
             <Image src={image} alt="image" className="md:w-64 md:h-40 object-cover w-28 h-16 transition-all transform duration-300 opacity-0 scale-110 group-hover:opacity-100 group-hover:scale-100" />
           </div>
         </div>
-        <p className="text-white text-xs">View Live</p>
+        <Link href={'#'} className="text-white text-xs">View Live</Link>
       </div>
     </div>
   );
